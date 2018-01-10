@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2FA3FAE5-F846-4200-9C09-97727A1F2B12}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>hachmoud</RootNamespace>
+    <AssemblyName>hachmoud</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arbre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arbre.Designer.cs">
+      <DependentUpon>Arbre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Arbre.resx">
+      <DependentUpon>Arbre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sbackground31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bracket1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ballon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bracket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\col.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\den.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\egy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\esp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\irn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\isl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jpn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ksa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nextone.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\per.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\por.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sbackground3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\srb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Allemagne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Allemagne1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Allemagne11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angleterre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Angleterre2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arabie_Saoudie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arabie_Saoudie1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arabie_Saoudie11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Argentina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Argentina2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Argentina3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Argentina21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Australie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Australie1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Australie11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\australien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Belgique.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Belgique1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Belgium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brazil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brazil2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brazil3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colombia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colombia2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Costa_Rica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Costa_Rica2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Croatia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Croatia2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Denmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Denmark2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Egypte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Egypte2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\France.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\France2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\German.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iran.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iran2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Islande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Islande2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Japan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Japan2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mexica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mexica2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Morocco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Morocco2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nigeria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nigeria3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panama2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perou1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perou2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Poland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Poland2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Portugal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Portugal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Russia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Russia2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saudi_Arabia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Senegal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Senegal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Serbia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Serbia2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\South_Korea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\South_Korea2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spain2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sweden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sweden2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Switzerland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Switzerland2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tunisia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tunisia2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uruguay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uruguay2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nga.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,14 @@
+C:\Users\COMPUTER\Desktop\hachmoud\hachmoud\bin\Debug\hachmoud.exe.config
+C:\Users\COMPUTER\Desktop\hachmoud\hachmoud\bin\Debug\hachmoud.exe
+C:\Users\COMPUTER\Desktop\hachmoud\hachmoud\bin\Debug\hachmoud.pdb
+C:\Users\COMPUTER\Desktop\hachmoud\hachmoud\obj\Debug\hachmoud.csprojResolveAssemblyReference.cache
+C:\Users\COMPUTER\Desktop\hachmoud\hachmoud\obj\Debug\hachmoud.home.resources
+C:\Users\COMPUTER\Desktop\hachmoud\hachmoud\obj\Debug\hachmoud.Properties.Resources.resources
+C:\Users\COMPUTER\Desktop\hachmoud\hachmoud\obj\Debug\hachmoud.csproj.GenerateResource.Cache
+C:\Users\COMPUTER\Desktop\hachmoud\hachmoud\obj\Debug\hachmoud.csproj.CoreCompileInputs.cache
+C:\Users\COMPUTER\Desktop\hachmoud\hachmoud\obj\Debug\hachmoud.exe
+C:\Users\COMPUTER\Desktop\hachmoud\hachmoud\obj\Debug\hachmoud.pdb
+C:\Users\COMPUTER\Desktop\hachmoud\hachmoud\obj\Debug\hachmoud.TirageAuto.resources
+C:\Users\COMPUTER\Desktop\hachmoud\hachmoud\obj\Debug\hachmoud.TirageManuel.resources
+C:\Users\COMPUTER\Desktop\hachmoud\hachmoud\bin\Debug\Oracle.DataAccess.dll
+C:\Users\COMPUTER\Desktop\hachmoud\hachmoud\obj\Debug\hachmoud.Arbre.resources
